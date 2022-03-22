@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./bin",   // Our compiled files will be placed here
+    "outDir": "./build",   // Our compiled files will be placed here
     "rootDir": "./src", // Our TypeScript files
     "lib": ["esnext", "dom"],
     "target": "es6",

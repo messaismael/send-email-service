@@ -2,14 +2,16 @@
   "name": "send-email-service",
   "version": "1.0.0",
   "description": "A lambda function that send email using aws ses",
-  "main": "bin/index",
+  "main": "build/index",
   "files": [
-    "bin/**/*.*",
+    "build/**/*.*",
     "package.json"
   ],
   "scripts": {
-    "claudia-start": "tsc && claudia create --api-module bin/index --region us-east-1 --policies policies",
-    "claudia-update": "tsc && claudia update",
+    "create": "tsc && claudia create --api-module build/index --region us-east-1 --policies policies",
+    "deploy:dev": "tsc && claudia update --version dev --set-env-from-json dev.json",
+    "deploy:prod": "tsc && claudia update --version prod --set-env-from-json prod.json",
+    "delete": "claudia destroy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ismael Messa",
@@ -23,5 +25,8 @@
     "type": "git",
     "url": "git+https://github.com/messaismael/send-email-service.git"
   },
-  "homepage": "https://github.com/messaismael/send-email-service#readme"
+  "homepage": "https://github.com/messaismael/send-email-service#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
 }
