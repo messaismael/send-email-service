@@ -29,7 +29,7 @@ export const sesSend= (formData: FormData): Promise<PromiseResult<SES.SendEmailR
       Body: {
         Text: { Data: "From Contact: " + name + "\n\n\n" + message },
       },
-      Subject: { Data: "Contacted from NumericaIdeas Website"},
+      Subject: { Data: "Contacted from my personal Website"},
     },
     Source: emailFrom,
   };
