@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "send-email-service-executor",
+    "name": "send-email-service",
+    "region": "us-east-1"
+  },
+  "api": {
+    "id": "8ckf04pb06",
+    "module": "build/index"
+  }
+}

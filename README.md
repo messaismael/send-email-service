@@ -1,7 +1,6 @@
 # Send Email Service
 
 
-
 ## Getting started
 
 **Send Email Service** it's a Lambda function which allows you to send email using **AWS SES**, **Lambda Function**, **TypeScript** and **Claudia** for deployment.
@@ -10,7 +9,7 @@
 
 ```
 $ git clone https://gitlab.com/numericaideas/ni-email-service.git
-$ cd ni-email-service
+$ cd send-email-service
 $ npm install
 ```
 
